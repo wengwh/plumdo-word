@@ -1,0 +1,57 @@
+<div class="wrapper wrapper-content" ng-controller="WordAnalyzerCtrl">
+	 <div class="row">
+        <div class="col-xs-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5><strong>单页分词</strong></h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+					<form role="form" novalidate name="editForm">
+		                <div summernote class="summernote"  ng-model="wordData.word">
+                        <br/>
+                        <br/>
+                   		</div>
+		            </form>	
+		          <div class="form-group">
+                	<div class="col-xs-8 col-sm-4 col-lg-2">
+                		<div class="input-group m-b">
+		                	<span class="input-group-addon">显示列数</span> 
+		                	<select class="form-control" ng-model="tdNum">
+		                         <option value="2">2</option>
+		                         <option value="3">3</option>
+		                         <option value="4">4</option>
+		                         <option value="5">5</option>
+		                         <option value="6">6</option>
+		                         <option value="7">7</option>
+		                         <option value="8">8</option>
+		                         <option value="9">9</option>
+		                         <option value="10">10</option>
+		                     </select>
+                  	  	</div>
+                     </div>
+       				 <button type="button" class="btn btn-primary"  ng-click="analyzerOneWord()">确定</button>
+       				 <button type="button" class="btn btn-danger"  ng-click="sortWord()">排序</button>		
+               	</div>		
+				
+				</div>
+			</div>
+		</div>
+		  <div class="col-xs-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5><strong>返回结果-总数：{{resultData==null?0:resultData.length}}</strong></h5>
+                    <div ibox-tools></div>
+                </div>
+				<div class="ibox-content">
+					<form role="form" novalidate name="editForm">
+		                <div summernote class="summernote"   ng-model="result">
+                   		</div>
+		            </form>		
+		            
+       				 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

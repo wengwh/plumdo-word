@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="plumdo" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title page-title></title>
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="libs/plugins/angular-notify/angular-notify.min.css" rel="stylesheet">
+<link href="libs/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body  class="{{$state.current.data.specialClass}} "  id="page-top">
+<!-- Main view  -->
+<div ng-include="'views/common/content.html'"></div>
+
+<div ng-load></div>
+<!-- jQuery and Bootstrap -->
+<script src="libs/jquery/jquery-2.1.1.min.js"></script>
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular-ui-router/angular-ui-router.js"></script>
+
+<!-- 可折叠菜单、加载进度条 -->
+<script src="libs/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="libs/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="libs/plugins/pace/pace.min.js"></script>
+
+<script src="libs/plugins/ui-bootstrap/ui-bootstrap-tpls-1.1.2.min.js"></script>
+<script src="libs/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+<script src="libs/plugins/angular-idle/angular-idle.js"></script>
+<script src="libs/plugins/angular-notify/angular-notify.min.js"></script>
+<script src="libs/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="libs/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+<!-- Main Angular scripts-->
+<script src="js/app.js"></script>
+<script src="js/constants/app-cfg.js"></script>
+<script src="js/constants/url-config.js"></script>
+<script src="js/configs/router.js"></script>
+<script src="js/configs/compile-provider.js"></script>
+<script src="js/configs/http-provider.js"></script>
+<script src="js/directives/page-config-directives.js"></script>
+<script src="js/directives/table-directive.js"></script>
+<script src="js/directives/datetime-directive.js"></script>
+  
+</body>
+
+</html>
